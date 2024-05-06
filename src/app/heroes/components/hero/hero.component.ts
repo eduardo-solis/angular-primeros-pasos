@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component({ 
   selector: 'app-heroes-hero',
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
