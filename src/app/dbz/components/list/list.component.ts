@@ -18,7 +18,9 @@ export class ListComponent {
   @Output()
   public onDelete: EventEmitter<string> = new EventEmitter();
 
-  onDeleteCharacter(id: string): void {
+  //onDeleteCharacter(id: string): void {
+  onDeleteCharacter(id?: string): void {
+    if( !id ) return;
     //console.log({id});
     this.onDelete.emit(id);
   }
